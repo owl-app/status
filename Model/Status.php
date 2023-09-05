@@ -30,6 +30,9 @@ abstract class Status implements StatusInterface
         $this->createdAt = new \DateTime();
     }
 
+    /**
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
@@ -45,6 +48,9 @@ abstract class Status implements StatusInterface
         $this->status = $status;
     }
 
+    /**
+     * @return string
+     */
     public function getComment(): ?string
     {
         return $this->comment;
@@ -55,6 +61,9 @@ abstract class Status implements StatusInterface
         $this->comment = $comment;
     }
 
+    /**
+     * @return OwnerInterface
+     */
     public function getOwner(): ?OwnerInterface
     {
         return $this->owner;
@@ -65,6 +74,9 @@ abstract class Status implements StatusInterface
         $this->owner = $owner;
     }
 
+    /**
+     * @return StatusableInterface
+     */
     public function getStatusSubject(): ?StatusableInterface
     {
         return $this->statusSubject;
