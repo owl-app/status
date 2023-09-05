@@ -10,6 +10,11 @@ use Sylius\Component\Resource\Factory\FactoryInterface;
 use Owl\Component\Status\Model\StatusableInterface;
 use Owl\Component\Status\Model\StatusInterface;
 
+/**
+ * @template T of StatusInterface
+ *
+ * @implements StatusFactoryInterface<T>
+ */
 final class StatusFactory extends ParentableFactory implements StatusFactoryInterface
 {
     /** @var FactoryInterface */
