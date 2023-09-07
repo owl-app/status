@@ -22,7 +22,7 @@ abstract class Status implements StatusInterface
     /** @var OwnerInterface */
     protected $owner;
 
-    /** @var StatusableInterface */
+    /** @var StatusableInterface|null */
     protected $statusSubject;
 
     public function __construct()
