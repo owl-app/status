@@ -8,6 +8,10 @@ use Doctrine\Common\Collections\Collection;
 
 interface StatusableInterface
 {
+    public function getStatus(): string;
+
+    public function setStatus(string $status): void;
+
     public function getName():? string;
     /**
      * @return Collection|StatusInterface[]
