@@ -12,7 +12,8 @@ interface StatusableInterface
 
     public function setStatus(string $status): void;
 
-    public function getName():? string;
+    public function getName(): ?string;
+
     /**
      * @return Collection|StatusInterface[]
      *

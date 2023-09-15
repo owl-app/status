@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Owl\Component\Status\Factory;
 
 use Owl\Component\Status\Model\OwnerInterface;
-use Sylius\Component\Resource\Factory\FactoryInterface;
 use Owl\Component\Status\Model\StatusInterface;
+use Sylius\Component\Resource\Factory\FactoryInterface;
 
 /**
  * @template T of StatusInterface
